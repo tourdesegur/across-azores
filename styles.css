@@ -68,9 +68,18 @@ header {
     color: var(--accent-red);
 }
 
+.row-dropmenu {
+    flex-wrap: nowrap;
+    padding: 0 20px 20px 20px;
+}
+
+ul.dropdown-menu {
+    width: calc();
+}
+
 ul.dropdown-menu.show {
-    inset: 50px auto auto 0px !important;
-    width: 100%;
+    inset: 50px auto auto -35px !important;
+
 }
 
 .btn-reserve {
