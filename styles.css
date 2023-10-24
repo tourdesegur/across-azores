@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --basic-font:'Inter', sans-serif;
+    --text-color: #171D1A;
+    --muted-text-color: #B8BBBA;
+    --accent-sand:#F6C16E;
+    --mid-sand: #FBE6C5;
+    --muted-sand: #FDF3E2; 
+    --accent-red: #F48064;
+    --faded-red: #FADECE;
+    --faded-green:#EEF5F1;
+    --mid-green: #AACBBA;
+    --accent-green:#466F62;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--basic-font);
+    /*border: 1px solid black; */
+}
+
+/*navbar code */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 1px solid var(--muted-text-color);
+    color: var(--text-color);
+    z-index: 1000;
+  }
+
+  .logo{
+    height: 40px;
+    cursor: pointer;
+}
+
+#nav-bar ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+#nav-bar ul li{
+    list-style-type:none;
+    display: inline;
+    padding-left: 40px;  
+}
+.nav-link {
+    display: inline;
+}
+
+#nav-bar ul li a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    
+}
+#nav-bar ul li a:hover{
+    color: var(--accent-red);
+}
+
+ul.dropdown-menu.show {
+    inset: 50px auto auto 0px !important;
+    width: 100%;
+}
+
+.btn-reserve {
+    padding: 10px 25px;
+    background-color: var(--accent-red);
+    border: 1px solid var(--accent-red);
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+}
+
+main {
+    background: var(--muted-text-color);
+}
